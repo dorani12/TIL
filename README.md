@@ -8,3 +8,7 @@ today I learned
 ## 작성법
 - **마크다운 형식**으로 작성하기
 - 과목별로 폴더 정리, 내용별로 세부폴더 정리
+---
+
+#Python
+[Day01](https://github.com/dorani12/TIL/tree/master/Python)
