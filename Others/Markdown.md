@@ -1,4 +1,4 @@
-## Markdown
+# Markdown
 텍스트 문서이면서 제목이나 리스트, 볼드체 등등 특정한 서식 요소를 가지고 있는 가벼운 마크업 언어
 
 *obsidian* (참고)
@@ -22,9 +22,10 @@ ex) `print('hello python')`
 print('hello python)
 ```
 ### 이미지 하이퍼링크
-- [강아지 사진]https://images.app.goo.gl/BFqyZzBX9xrRTbNv6
+- [강아지 사진](https://images.app.goo.gl/BFqyZzBX9xrRTbNv6)
 - ![강아지사진](https://images.app.goo.gl/BFqyZzBX9xrRTbNv6)
-!를 통해 대체텍스트 표기
+  
+    !를 통해 대체텍스트 표기
 ### 기울기
 - ** 굵게
  **볼드처리**
@@ -35,3 +36,6 @@ print('hello python)
 ### 수평선 생성
 ---
 "-" 3개
+
+### 줄바꿈
+마지막 줄의 마지막문자에 공백 2칸 이상
