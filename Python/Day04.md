@@ -53,6 +53,7 @@ module, package ~ 제어문: 조건문, 반복문
 
   print(response)
   ```
+***
 ### 제어문  
 - cotrol Statement
 - 코드의 실행 흐름을 제어하는 데 사용되는 구문  
@@ -137,7 +138,7 @@ module, package ~ 제어문: 조건문, 반복문
             else:
                 print('..')
         ```
-
+***
 ### List Comprehension
 - 간결하고 효율적인 리스트 생성 방법
 - 꿀팁) 2차원 리스트 작성
