@@ -10,5 +10,5 @@ today I learned
 - 과목별로 폴더 정리, 내용별로 세부폴더 정리
 ---
 
-# Python
-[Day01](https://github.com/dorani12/TIL/tree/master/Python)
+### [Python](https://github.com/dorani12/TIL/tree/master/Python)
+### [Algorithm](https://github.com/dorani12/TIL/tree/master/ALGORITHM)
