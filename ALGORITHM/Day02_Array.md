@@ -13,7 +13,7 @@
   예제
     ```python
     def BubbleSort(arr, N) # 정렬할 배열과 배열의 크기
-        for i in range(N-1, 0, -1) #단계가 지날 때마다, 가장 끝부터 정렬됨
+        for i in range(N-1, 0, -1): #단계가 지날 때마다, 가장 끝부터 정렬됨
             for j in range(0, i): #맨 왼쪽 부터, 인접한 원소와의 크기 비교_-1인건 왼쪽, 오른쪽 비교
                 if a[j] > a[j+1]:
                     a[j], a[j+1] = a[j+1], a[j] #인접한 원소 간 위치 변경_python은 tmp불필요

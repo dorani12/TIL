@@ -1,4 +1,4 @@
-#### 알고리즘, 배열  
+### 알고리즘, 배열  
 알고리즘 1일차  
 **손으로 적고 그리며 로직 구조, 슈도 함수를 완성시키고 난 뒤에 코드를 적기 시작!**
 
@@ -60,7 +60,7 @@ APS: Algorithm Problem Solving
   - 예제
     ```python
     def BubbleSort(arr, N) # 정렬할 배열과 배열의 크기
-        for i in range(N-1, 0, -1) #단계가 지날 때마다, 가장 끝부터 정렬됨
+        for i in range(N-1, 0, -1): #단계가 지날 때마다, 가장 끝부터 정렬됨
             for j in range(0, i): #맨 왼쪽 부터, 인접한 원소와의 크기 비교_-1인건 왼쪽, 오른쪽 비교
                 if a[j] > a[j+1]:
                     a[j], a[j+1] = a[j+1], a[j] #위치 변경_python은 tmp불필요
