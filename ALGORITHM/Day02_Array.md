@@ -26,18 +26,18 @@
   예제
     ```python
     def CountingSort(Data, Temp, k) # 정렬할 배열 data와 배열의 크기
-    # 갯수를 셀 원소의 갯수는 마지막 인덱스+1!
-    counts = [0] * (k+1)
-    # 1. data 리스트를 순회하며, 각 원소의 갯수를 count하기
-    for i in range(0, len(Data)):
-      counts[Data[i]] += 1
-    # 2. 각 항목 전까지 원소의 갯수를 더해 누적시키기
-    for i in range(1, k+1):
-      counts[i] += counts[i-1]
-    # 3. Temp를 data의 길이로 놓고 마지막 원소부터 시작, count에 해당하는 위치 -1에 해당 원소를 위치시키고 (counts 값 -1) 완성
-    for i in range(len(Temp)-1, -1, -1):
-      counts[Data[i]] -= 1
-      Temp[counts[Data[i]]] = Data[i]
+      # 갯수를 셀 원소의 갯수는 마지막 인덱스+1!
+      counts = [0] * (k+1)
+      # 1. data 리스트를 순회하며, 각 원소의 갯수를 count하기
+      for i in range(0, len(Data)):
+        counts[Data[i]] += 1
+      # 2. 각 항목 전까지 원소의 갯수를 더해 누적시키기
+      for i in range(1, k+1):
+        counts[i] += counts[i-1]
+      # 3. Temp를 data의 길이로 놓고 마지막 원소부터 시작, count에 해당하는 위치 -1에 해당 원소를 위치시키고 (counts 값 -1) 완성
+      for i in range(len(Temp)-1, -1, -1):
+        counts[Data[i]] -= 1
+        Temp[counts[Data[i]]] = Data[i]
     ```
 - 선택 정렬
 - 퀵 정렬
