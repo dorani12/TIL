@@ -1,5 +1,5 @@
 ### 알고리즘, 자료구조_Stack 스택
-알고리즘 8일차
+알고리즘 8일차  
 memoization, DP, DFS  
 ***
 ### Memoization
