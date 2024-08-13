@@ -82,7 +82,7 @@ cf) stack
 - index 순환: `mod`연산으로 사용
 - front변수: 포화, 공백 상태를 확인하기 위해 항상 빈자리
 - 자료의 삽입 | 삭제: `rear = (rear+1) mod n` | `front = (front+1) mod n`
-- 뎦어써지는 것을 방지하기 위해 `isFull()`, `isEmpty()` 확인 필수 
+- 덮어써지는 것을 방지하기 위해 `isFull()`, `isEmpty()` 확인 필수 
 - `isFull()`: rear = qSize -1 일때,
 - 하지만, `front == rear` 가 `is_empty` 와 `is_full` 의 조건인건 여전.
     - 해결: `number_of_ele_in_q = 0`
