@@ -86,7 +86,7 @@ depth first search || BFS: breadth 너비 우선 탐색
   ```
 - 예제: 인접 list, 행렬 구하기
   ```python
-  # 정점의 개수와 정점들간으 관계 주어졌을 때
+  # 정점의 개수와 정점들간의 관계 주어졌을 때
   # DFS로 탐색하기 & 방문 순서
   ''' 
   input data 
