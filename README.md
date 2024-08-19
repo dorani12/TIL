@@ -12,3 +12,4 @@ today I learned
 
 ### [Python](https://github.com/dorani12/TIL/tree/master/Python)
 ### [Algorithm](https://github.com/dorani12/TIL/tree/master/ALGORITHM)
+### [Web](https://github.com/dorani12/TIL/tree/master/Web)
