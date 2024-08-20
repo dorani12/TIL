@@ -9,21 +9,23 @@
     .container {
       height: 500px;
       border: 1px solid black;
-      /* display: flex; */
-      /* flex-direction: row; */
+      /* 기본은 main축 x축 왼 => 오 */
+      display: flex;
+      /* row가 기본, main축의 변화는 column */
       /* flex-direction: column; */
+      /* 순서가 거꾸로 가능 */
       /* flex-direction: row-reverse; */
       /* flex-direction: column-reverse; */
 
       /* flex-wrap: nowrap; */
-      /* flex-wrap: wrap; */
+      flex-wrap: wrap;
 
       /* justify-content: flex-start; */
-      /* justify-content: center; */
+      justify-content: center;
       /* justify-content: flex-end; */
 
       /* align-content: flex-start; */
-      /* align-content: center; */
+      align-content: center;
       /* align-content: flex-end; */
 
       /* align-items: flex-start; */
