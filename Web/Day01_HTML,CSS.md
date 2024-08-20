@@ -235,4 +235,4 @@ html의 모든 요소를 감싸는 box모델
     ```
 2. Inner display type   
 `display: flex;`  
-(나중에 나옴)
+(to be continue..)
