@@ -13,7 +13,9 @@ top, bottom, left, right로 방향 존재
 1. 내용 : content box = 실제 콘텐츠가 표시되는 영역, width * height로 크기 조정
 2. 안쪽 여백 : padding box = 콘텐츠 주위의 공백
 3. 테두리 : border = 콘텐츠와 패딩을 래핑
-4. 외부 간격 : margin = 테두리 외부의 공간, 콘텐츠, 패딩 및 테두리를 래핑, 박스와 다른 요소 사이의 공백  
+4. 외부 간격   
+: margin = 테두리 외부의 공간, 콘텐츠, 패딩 및 테두리를 래핑, 박스와 다른 요소 사이의 공백  
++) 다른 방향의 margin이 만나면 더 큰 margin으로 상쇄됨 = 일관성, 단순화
 
 - shorthand 속성
     - border: 색상, 테두리, 테두리 굵기를 순서 상관없이 나열
@@ -141,6 +143,7 @@ ex) 다른 요소 위에(Z축) 위치, 특정 위치(top, bottom, left, right)�
 1. 선언   
 부모 요소 `display: flex;`(배치의 주체) -> 자식 요소들이 flex item이 됨
 2. 배치  
+[flex 정렬 연습 사이트](https://flexboxfroggy.com/#ko)  
 main축을 기준으로 start -> end(왼 -> 오 || 위 -> 아래)
 `flex-direction: column;`, row, column, row-reverse(시작, 끝점 반대) 가능
 3. 행 변화  
@@ -154,6 +157,8 @@ cross axis 교차 축 기준 정렬
 +) align-self는 개별 요소 item에 특정한 정렬하도록 줄 수 있음
 `flex-grow`, `flex-shrink` => 남은 여백을 어떻게 나눌지(남은 여백을 기준으로 해당비율로 나누어줌)
 `flex-basis` : flex-item의 기본적인 크기를 지정 (width보다 우선)
+- shorthand 속성
+    - `flex-flow: flex-direction flex-wrap;`
 
 #### 반응형 레이아웃
 `flex-wrap: wrap;`, `flex-grow`, `flex-basis` 를 활용해 다른 디바이스, 화면에서도 사이즈 조절이 되도록 화면 구성  
