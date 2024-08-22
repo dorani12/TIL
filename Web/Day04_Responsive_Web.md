@@ -162,7 +162,86 @@ bootstrap의 경우 breakpoints 6개로 구현
 (~px이상일 때, 적용)  
 
 media Query 이용
+```html
+  <h2 class="text-center">Breakpoints</h2>
+  <div class="container">
+    <div class="row">
+      <div class="box col-12 col-sm-6 col-md-2 col-lg-3 col-xl-4">
+        col
+      </div>
+      <div class="box col-12 col-sm-6 col-md-8 col-lg-3 col-xl-4">
+        col
+      </div>
+      <div class="box col-12 col-sm-6 col-md-2 col-lg-3 col-xl-4">
+        col
+      </div>
+      <div class="box col-12 col-sm-6 col-md-12 col-lg-3 col-xl-12">
+        col
+      </div>
+    </div>
 
+    <hr>
+
+    <h2 class="text-center">Breakpoints + offset</h2>
+    <div class="row g-4">
+      <div class="box col-12 col-sm-4 col-md-6">
+        col
+      </div>
+      <div class="box col-12 col-sm-4 col-md-6">
+        col
+      </div>
+      <div class="box col-12 col-sm-4 col-md-6">
+        col
+      </div>
+      <div class="box col-12 col-sm-4 offset-sm-4 col-md-6 offset-md-0">
+        col
+      </div>
+    </div>
+  </div>
+```
+```html
+  <h2 class="text-center">Grid Cards</h2>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+```
 ***
 ### UX/UI
 사용자 경험 of 제품, 서비스  
