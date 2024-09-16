@@ -23,7 +23,7 @@ backend 백엔드 : 서버 측에서 동작, 클라이언트의 요청에 대한
 !서버 구현!
 
 ***
-### 가상환경 venv
+## 가상환경 venv
 python 애플리케이션과 그에 따른 패키지들을 격리하여 개별 프로젝트를 관리할 수 있는 독립적인 실행 환경
 
 0. `$ python -m venv venv \n $ source venv/Scripts/activate \n (venv)` : 가상 환경 생성 후 활성화 = ON  
@@ -68,21 +68,29 @@ cf) 프로젝트 구조 중
 `views.py` : HTTP 요청을 처리하고 해당 요청에 대한 응답 반환, MTV 중 V   
 `tests.py` : 프로젝트 테스트 코드를 작성  
 
-### 요청과 응답
+## 요청과 응답
 코드 작성 순서  
 Django 는 `URLs` → `Views` → `Templates` 에 따라 요청 → 응답을 구성하므로, 코드도 이에 따라 작성  
 
-1. URLs : `url.py`의 `urlpatterns`에 요청 주소별로 views 모듈의 해당 주소와 관련된 로직이 실행되도록 view 함수에 전달  
+### URLs
+1. URLs : `urls.py`의 `urlpatterns`에 요청 주소별로 views 모듈의 해당 주소와 관련된 로직이 실행되도록 `articles`폴더 내의 `view 함수`에 전달  
+- `path('index/', views.index),` : 새로 생성할 주소 명
+- `from articles import views` : view에 있는 함수를 찾기
+---
+### Views
 2. View : `views.py`의 함수를 찾아 = `page주소명(request)`에서 특정경로에 있는 template과 request 객체를 결합해 응답 개체 반환  
-`def index(request): \n
-    return render(request, 'articles/index.html')`
-3. Template : templates 폴더 생성, 내부에 articles 폴더 생성 후 템플릿 파일 생성
+- `def index(request):` : 생성할 주소관련 함수 생성
+- `return render(request, 'index.html')`  : 요청데이터, 템플릿 이름_템플릿 파일 내의 파일명
+---
+### templates/템플릿 파일
+3. Template : 앱 폴더(articles) 내에 templates 폴더 생성 후 `해당 파일명의`템플릿 파일 생성
 
 ***
 #### 참고
-Trailing Comma = 후행 쉼표, 마지막 요소 뒤에도 `,`  
-[Django의 규칙]
-1. `urls.py`에서 각 url의 문자열 경로는 `/`로 끝남
-2. `views.py`에서 모든 함수는 첫번째 인자 = request로 요청 객체를 받음
-3. Django의 경우 app폴더 내 templates 안에 있는 template 파일만 읽어올 수 있음
+* Trailing Comma = 후행 쉼표, 마지막 요소 뒤에도 `,`  
+* [Django의 규칙]
+  1. `urls.py`에서 각 url의 문자열 경로는 `/`로 끝남
+  2. `views.py`에서 모든 함수는 첫번째 인자 = request로 요청 객체를 받음
+  3. Django의 경우 app폴더 내 templates 안에 있는 template 파일만 읽어올 수 있음
+* gitignore 파일 작성 후 git add . 실행!
 ***
