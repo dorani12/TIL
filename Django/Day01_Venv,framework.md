@@ -35,7 +35,7 @@ python 애플리케이션과 그에 따른 패키지들을 격리하여 개별 �
 - on/off 개념으로 개발을 위해 사용하는 도구세트  
 의존성 패키지 등 협업시 개발에 필요한 패키지 목록을 공유할 수 있게 됨  
 
-- `$ django-admin startproject firstpjt .`
+- `$ django-admin startproject firstpjt .`      : ` .`의 유무에 따라 현재 작업중인 폴더에서 생성할지, 폴더를 하나 만들고 그 내부에 만들지를 결정하게 됨
 - `$ python manage.py runserver` : 서버 실행
 
 ***
