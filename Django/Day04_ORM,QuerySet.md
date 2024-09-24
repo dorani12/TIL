@@ -14,7 +14,7 @@ but, Django에 내장된 ORM이 중간에서 해석 및 변환
 - **CRUD** : Create 저장, Read 조회, Update 갱신, Delete 삭제
 ---
 ### QuerySet 실습
-1. `$ pip install ipyhton`, `$ pip install django-extentions`명령어를 통해 외부 라이브러리 설치
+1. `$ pip install ipyhton`, `$ pip install django-extensions`명령어를 통해 외부 라이브러리 설치
 2. `$ pip freeze > requirements.txt`로 요구사항 텍스트파일 업데이트, `settings.py`파일의 INSTALLED_APPS에 `django_extensions` 추가
 3. `$ python manage.py shell_plus` : 한 줄의 명령어로 인한 변화를 바로 확인 가능함
 +) Django shell은 장고 내에서 실행되는 python shell 
