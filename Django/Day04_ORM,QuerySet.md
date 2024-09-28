@@ -1,4 +1,4 @@
-## Django ORM, QierySet
+## Django ORM, QuerySet
 Django Day04  
 ***
 ## ORM : object-relational-mapping
