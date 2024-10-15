@@ -39,7 +39,7 @@ ex) 한 환자가 두 명의 의사에게 예약 받도록 하는 상황 -> 예�
 ***
 ## 의사, 환자 진료 예약 모델
 1. 환자 모델에 ManyToManyField() 작성  
-hospitals/models.py  
+`hospitals/models.py`  
 ```python
 class Patient(models.Model):
   doctors = models.ManyToManyField(Doctor)
@@ -49,7 +49,7 @@ class Patient(models.Model):
     return f'{self.pk}번 환자 {self.name}'
 ```
 2. DB 초기화, Migration 진행 & Shell 실행
-3. 의사, 환자 생성 
+3. 의사, 환자 생성  
 `doctor1 = Doctor.objects.create(name='allie')` \n
 `patient1 = Patient.objects.create(name='carol')` \n
 `patient2 = Patient.objects.create(name='duke')`
@@ -95,7 +95,7 @@ patient1.doctors.remove(doctor1)
   class Article(models.Model):
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL)
   ```
-* => 역참조 매니저 충돌  
+* 결과 : 역참조 매니저 충돌  
   * N:1 - `user.article_set.all()` 유저가 작성한 게시글
   * M:N - 유저가 좋아요 한 게시글 모두 동일
 
@@ -105,7 +105,7 @@ patient1.doctors.remove(doctor1)
 `path(<int:article_pk>/likes/, views.likes, name='likes'),`
 3. view 함수   
 ```python
-@logi_required
+@login_required
 def likes(request, article_pk):
   article = Article.objects.get(pk=article_pk)
   if request.user in article.like_users.all():
@@ -114,7 +114,7 @@ def likes(request, article_pk):
     article.like_users.add(request.user)
   return redirect('articles:index')
 ```
-4. html 작성  
+4. templates
 ```html
 {% for article in articles %}
   <form action="{% url 'articles:likes' article.pk %}" method="POST">
