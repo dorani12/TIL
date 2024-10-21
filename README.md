@@ -13,3 +13,7 @@ today I learned
 ### [Python](https://github.com/dorani12/TIL/tree/master/Python)
 ### [Algorithm](https://github.com/dorani12/TIL/tree/master/ALGORITHM)
 ### [Web](https://github.com/dorani12/TIL/tree/master/Web)
+### [Django](https://github.com/dorani12/TIL/tree/master/Django)
+### [DB](https://github.com/dorani12/TIL/tree/master/DB)
+### [JAVASCRIPT](https://github.com/dorani12/TIL/tree/master/JAVASCRIPT)
+#### [Git 등](https://github.com/dorani12/TIL/tree/master/Others)
